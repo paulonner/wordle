@@ -1,8 +1,13 @@
+import Home from "./pages/Home"
+import { AppContextProvider } from './context/AppContext'
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Wordle</h1>
-    </>
+    <AppContextProvider>
+      <div className="mx-auto max-w-2xl flex justify-center">
+        <Home />
+      </div>
+    </AppContextProvider>
   )
 }
 
